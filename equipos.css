@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);
+
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.767);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Estilos para el contenedor del logo y el nombre de la liga */
+.logo {
+  display: flex;
+  align-items: center;
+  /* Centra verticalmente */
+}
+
+.logo img {
+  max-height: 50px;
+  /* Ajusta el tamaño del logo */
+  margin-right: 20px;
+  /* Espacio entre el logo y el texto */
+}
+
+/* Estilos para la liga name */
+.liga-name {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+
+/* Estilos para la sección de equipos */
+.equipos-section {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+/* Estilos para el selector de división */
+.division-select select {
+  padding: 2px 1px;
+  /* Ajusta el padding para hacerlo más visible y cómodo */
+  font-size: 16px;
+  /* Tamaño de fuente */
+  border: none;
+  /* Quita el borde predeterminado */
+  border-radius: 5px;
+  /* Añade bordes redondeados */
+  background-color: #555;
+  /* Color de fondo */
+  color: white;
+  /* Color del texto */
+}
+
+.division-select label {
+  font-size: 18px;
+  /* Tamaño de fuente del label */
+  margin-right: 15px;
+  /* Espacio a la derecha del label */
+  color: white;
+  /* Color del texto del label */
+  padding: 10 10px;
+  /* Añade un poco de padding para separar el label del select */
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 10px;
+  padding: 0 10px;
+  /* Agrega un padding horizontal */
+}
+
+.slide {
+  flex: 0 0 calc(18% - 40px);
+  /* Ancho fijo para cada logo */
+  text-align: center;
+  padding: 10px;
+  background-color: #26242443;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  /* Añade margen inferior para separar las filas */
+}
+
+.slide img {
+  max-width: 150px;
+  max-height: 150px;
+  margin: 10 10 10 10;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.slide:hover img {
+  transform: scale(1.1);
+}
+
+h2,
+label,
+p,
+a {
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  /* Elimina el subrayado */
+}
+
+p2 {
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  padding: 5px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-weight: bold;
+}
+
+/* Estilos para el logo en el footer */
+.footer-logo {
+  max-height: 70px;
+  /* Ajusta el tamaño del logo en el footer */
+  vertical-align: middle;
+  /* Alinea verticalmente con el texto */
+  margin-left: 5px;
+  /* Ajusta el espacio entre el texto y el logo */
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 1200px) {
+  .slide {
+    flex: 0 0 calc(33.333% - 40px);
+    /* Para 3 columnas en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .slide {
+    flex: 0 0 calc(50% - 40px);
+    /* Para 2 columnas en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .slide {
+    flex: 0 0 calc(100% - 40px);
+    /* Para 1 columna en pantallas muy pequeñas */
+  }
+}
