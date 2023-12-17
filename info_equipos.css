@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);
-  color: white;
+
 }
 
 header {
@@ -40,29 +40,37 @@ nav ul li a {
 .logo {
   display: flex;
   align-items: center;
-  /* Centra verticalmente */
 }
 
 .logo img {
   max-height: 50px;
-  /* Ajusta el tamaño del logo */
   margin-right: 20px;
-  /* Espacio entre el logo y el texto */
 }
 
-/* Estilos para la liga name */
+
 .liga-name {
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1.5em;
 }
 
-/* Estilos para la sección de información del equipo */
+
 .equipo-info {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 50px;
+  color : white;
+  font: 1.5em;
+  font-weight: regular;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.346);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.416);
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 
